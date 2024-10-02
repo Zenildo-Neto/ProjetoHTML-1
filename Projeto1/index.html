@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeroporto Internacional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Aeroporto Novo Horizonte</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" aria-label="Home">Home</a></li>
+                <li><a href="#sobre" aria-label="Sobre Nós">Sobre</a></li>
+                <li><a href="#voos" aria-label="Voos">Voos</a></li>
+                <li><a href="#servicos" aria-label="Serviços">Serviços</a></li>
+                <li><a href="contato.html" aria-label="Contate-nos">Contate-nos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section id="home" class="hero">
+        <h2>Bem-vindo ao Aeroporto Novo Horizonte</h2>
+        <p>Seu destino começa aqui.</p>
+    </section>
+
+    <section id="sobre" class="content">
+        <h2>Sobre Nós</h2>
+        <p>
+            O Aeroporto Novo Horizonte é um dos principais centros de transporte aéreo do Brasil. 
+            Com um histórico de inovação e serviço de qualidade, somos dedicados a oferecer uma 
+            experiência excepcional a todos os nossos passageiros. Operando desde 1985, nosso aeroporto 
+            atende a milhões de passageiros por ano, conectando destinos nacionais e internacionais.
+        </p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="mainaeroporto.jpg">
+            <source media="(max-width: 1200px)" srcset="mainaeroporto.jpg">
+            <img class="aeroporto-img" src="mainaeroporto.jpg" alt="Imagem aérea do Aeroporto Novo Horizonte">
+        </picture>
+    </section>
+
+    <section id="voos" class="content">
+        <h2>Voos</h2>
+        <input type="radio" id="tab1" name="tab-control" checked>
+        <input type="radio" id="tab2" name="tab-control">
+        <div class="tabs">
+            <label for="tab1" class="tab-label">Embarques</label>
+            <label for="tab2" class="tab-label">Desembarques</label>
+        </div>
+        <div id="content1" class="tab-content">
+            <div class="voo-table">
+                <div class="voo-row">
+                    <div class="voo-header">Número</div>
+                    <div class="voo-header">Destino</div>
+                    <div class="voo-header">Hora</div>
+                    <div class="voo-header">Status</div>
+                    <div class="voo-header">Portão</div>
+                </div>
+                <div class="voo-row">
+                    <div class="voo-data">1234</div>
+                    <div class="voo-data">São Paulo</div>
+                    <div class="voo-data">14:30</div>
+                    <div class="voo-data">Embarque</div>
+                    <div class="voo-data">5</div>
+                </div>
+                <div class="voo-row">
+                    <div class="voo-data">5678</div>
+                    <div class="voo-data">Rio de Janeiro</div>
+                    <div class="voo-data">14:00</div>
+                    <div class="voo-data">Embarque</div>
+                    <div class="voo-data">5</div>
+                </div>
+                <div class="voo-row">
+                    <div class="voo-data">9101</div>
+                    <div class="voo-data">Brasília</div>
+                    <div class="voo-data">15:00</div>
+                    <div class="voo-data">Aguardando</div>
+                    <div class="voo-data">6</div>
+                </div>
+                <div class="voo-row">
+                    <div class="voo-data">1121</div>
+                    <div class="voo-data">Curitiba</div>
+                    <div class="voo-data">16:45</div>
+                    <div class="voo-data">Aguardando</div>
+                    <div class="voo-data">7</div>
+                </div>
+            </div>
+        </div>
+        <div id="content2" class="tab-content">
+            <div class="voo-table">
+                <div class="voo-row">
+                    <div class="voo-header">Número</div>
+                    <div class="voo-header">Origem</div>
+                    <div class="voo-header">Hora</div>
+                    <div class="voo-header">Status</div>
+                    <div class="voo-header">Portão</div>
+                </div>
+                <div class="voo-row">
+                    <div class="voo-data">5678</div>
+                    <div class="voo-data">Rio de Janeiro</div>
+                    <div class="voo-data">15:45</div>
+                    <div class="voo-data">Aterrissado</div>
+                    <div class="voo-data">3</div>
+                </div>
+                <div class="voo-row">
+                    <div class="voo-data">2234</div>
+                    <div class="voo-data">Salvador</div>
+                    <div class="voo-data">16:10</div>
+                    <div class="voo-data">Aterrissado</div>
+                    <div class="voo-data">4</div>
+                </div>
+                <div class="voo-row">
+                    <div class="voo-data">3345</div>
+                    <div class="voo-data">Manaus</div>
+                    <div class="voo-data">16:30</div>
+                    <div class="voo-data">Em andamento</div>
+                    <div class="voo-data">2</div>
+                </div>
+                <div class="voo-row">
+                    <div class="voo-data">4456</div>
+                    <div class="voo-data">Recife</div>
+                    <div class="voo-data">17:00</div>
+                    <div class="voo-data">Aguardado</div>
+                    <div class="voo-data">1</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="content">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-container">
+            
+            <div class="servico-btn">
+                <div class="servico-imagem" style="background-image: url('comida.png');">
+                    <div class="servico-nome">
+                        <span>Alimentação</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="servico-btn">
+                <div class="servico-imagem" style="background-image: url('loja.webp');">
+                    <div class="servico-nome">
+                        <span>Lojas</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="servico-btn">
+                <div class="servico-imagem" style="background-image: url('taxi.jpg');">
+                    <div class="servico-nome">
+                        <span>Serviços</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aeroporto Internacional. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
